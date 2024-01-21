@@ -34,6 +34,8 @@ import {PaginatorModule} from "primeng/paginator";
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { ImageViewerComponent } from './components/image-viewer/image-viewer.component';
 import { NodeInfoViewerComponent } from './components/node-info-viewer/node-info-viewer.component';
+import { TreeViewComponent } from './components/tree-view/tree-view.component';
+import {TreeModule} from "primeng/tree";
 
 
 @NgModule({
@@ -50,7 +52,8 @@ import { NodeInfoViewerComponent } from './components/node-info-viewer/node-info
     SearchDocumentsComponent,
     SidebarComponent,
     ImageViewerComponent,
-    NodeInfoViewerComponent
+    NodeInfoViewerComponent,
+    TreeViewComponent
   ],
   imports: [
     BrowserModule,
@@ -73,7 +76,8 @@ import { NodeInfoViewerComponent } from './components/node-info-viewer/node-info
     AutoCompleteModule,
     GalleriaModule,
     ImageModule,
-    PaginatorModule
+    PaginatorModule,
+    TreeModule
   ],
   providers: [
     MessageService
